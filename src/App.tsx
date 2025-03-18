@@ -81,7 +81,7 @@ function App() {
           <ImageGallery images={images} openModal={openModal} />
         )}
         {isLoading && (
-          <Loader>
+          <Loader onClick={onLoadMore} isDisabled={isLoading}>
             Loading ...
           </Loader>
         )}
