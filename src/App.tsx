@@ -82,7 +82,7 @@ function App() {
         )}
         {isLoading && (
           <Loader>
-            Loading ... 
+            Loading ...
           </Loader>
         )}
         {isVisible && (

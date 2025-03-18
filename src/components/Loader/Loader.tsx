@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 interface LoadMoreBtnProps {
-  children: ReactNode,
+  children: string,
   onClick: () => void,
   isDisabled: boolean,
 }
