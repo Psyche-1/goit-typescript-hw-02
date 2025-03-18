@@ -8,9 +8,11 @@ interface SearchBarProps {
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const handleSubmit = (evt: FormEvent<HTMLFormElement>) => {
     evt.preventDefault();
-    const form = evt.target;
-    const search = form.elements.search.value;
+    const form = evt.currentTarget;
+    // const search = (form.elements.search) as HTMLInputElement)?;
 
+    const search = (form.elements.namedItem('search') as HTMLInputElement)?.value;
+    
     if (search.trim() === '') {
       toast.error(`Enter text for finding images`);
       return;
