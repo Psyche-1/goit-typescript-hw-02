@@ -86,7 +86,7 @@ function App() {
           </Loader>
         )}
         {isVisible && (
-          <LoadMoreBtn onClick={onLoadMore} disabled={isLoading}>
+          <LoadMoreBtn onClick={onLoadMore} isDisabled={isLoading}>
             {isLoading ? "Loading..." : "Loading more"}
           </LoadMoreBtn>
         )}
