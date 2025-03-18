@@ -8,9 +8,9 @@ interface LoadMoreBtnProps {
 
 const LoadMoreBtn: React.FC<LoadMoreBtnProps> = ({ children, onClick, isDisabled }) => {
   return (
-    <div onClick={onClick} disabled={isDisabled}>
+    <button onClick={onClick} disabled={isDisabled}>
       {children}
-    </div>
+    </button>
   );
 };
 export default LoadMoreBtn;
