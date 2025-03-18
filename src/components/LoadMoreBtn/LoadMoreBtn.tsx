@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 interface ImageCardProps {
-  children: string;
+  children: ReactNode;
   onClick: () => void;
   isDisabled: boolean;
 }
