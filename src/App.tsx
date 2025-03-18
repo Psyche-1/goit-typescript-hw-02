@@ -15,7 +15,7 @@ function App() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isEmpty, setIsEmpty] = useState<boolean>(false);
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const [error, setError] = useState<boolean | null>(false);
+  const [error, setError] = useState<string | null>(null);
   const [query, setQuery] = useState<string>("");
   const [page, setPage] = useState<number>(1);
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
